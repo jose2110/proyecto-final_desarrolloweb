@@ -1,6 +1,9 @@
 .paginacuatro {
-    background-color: darkcyan;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    background-color: rgb(238, 214, 238);
+    }
+    .paginauno{
+      background-color: rgb(238, 214, 238);
+    }
   
   /* header */
   .title h1 {
@@ -11,6 +14,7 @@
     -webkit-animation: rotate-scale-up 0.65s linear both;
     animation: rotate-scale-up 0.65s linear both;
     height: 100%;
+    text-align: center;
     
 }
   
@@ -18,61 +22,25 @@
     text-align: center;
     font-size: 40px;
  }
-  
-  .conteiners {
-    background-color: antiquewhite;
-    width: 100%;
-    max-width: 1000px;
-    margin: 25px auto;
-    display: grid;
-    gap: 25px;
-    grid-template-columns: repeat(5, 1fr); }
-   
+.carruceluno{
+  margin:auto;
+  width: 800px ;
+  height:500px auto;
+
+}
 
   
-  .conteiners > .nombre,
-  .conteiners > .descripcion,
-  .conteiners > .imagencasas,
+  
+
   
   
-  .conteiners > div {
-    background-color: antiquewhite;
-    padding: 20px;
-    border: 1px solid black; }
-  
-  .conteiners .nombre,
  
   
-  .conteiners > .descripcion {
-    grid-column: span 3; }
   
-  .conteiners > .imagencasas {
-    grid-column: span 2;
-    background: gray;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
   
-  .descripcion > .articulo h1,
-  .descripcion > .articulo p {
-    padding: 10px; }
-  
-  .conteiners .depto {
-    background: grey;
-    color: blanchedalmond; }
-  
-  .depto :hover {
-    cursor: pointer;
-    color: black;
-    background: blanchedalmond; }
-  
-  .imagencasas :hover {
-    cursor: pointer;
-    color: black;
-    background: blanchedalmond; }
-  
+
+ 
+
  
   
   @-webkit-keyframes rotate-scale-up {
@@ -104,35 +72,54 @@
         }
     }
 }
-.title{
-    .menu{
-        background-color: dimgrey;
-        ul{
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            justify-content: center;
-            li{
-                padding: 20px;
-                font-size: 20px;
-            }
-                
-        }
-    }
-}  
-.menu ul li:hover {
-    background-color: black;
-    color: blanchedalmond;
+
+.menu{
+  background-color: dimgrey;
+  ul{
+      display: flex;
+      list-style: none;
+      
+      padding: 0;
+      justify-content: center;
+      li{
+        padding: 20px;
+          font-size: 20px;
+      }
+      a{
+        font-weight: bold;
+        text-decoration: none;
+      }
+          
+  }
 }
+
+@media screen and (max-width: 768px) {
+.menu{
+  ul{
+    
+    flex-direction: column;
+    text-align: center;
+  }
+}
+}
+  
+
+
+  
+
+
+
+
 .ventas{
     height: 70px;
     width: 100%;
+    h1{
     
     text-align: center;
     justify-content: center;
     font-style: italic;
     font-weight: bold;
+}
 }
 .ventasuno{
     width: 100%;
@@ -157,11 +144,7 @@
     float: left;
 }
 .paginacinco{
-  background: rgb(2,0,36);
-background: -moz-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(58,120,124,0.2721463585434174) 17%, rgba(0,255,59,1) 100%);
-background: -webkit-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(58,120,124,0.2721463585434174) 17%, rgba(0,255,59,1) 100%);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(58,120,124,0.2721463585434174) 17%, rgba(0,255,59,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00ff3b",GradientType=1);
+  background-color: rgb(238, 214, 238);
 }
 .registro{
 height: 650px;
@@ -172,7 +155,7 @@ align-items: center;
 form{
   background: white;
   padding: 40px 0;
-  border-radius: 10px;
+  
   .grupo{
     position: relative;
     margin: 45px;
@@ -258,21 +241,33 @@ cursor: pointer;
       h2{
     text-align: center;
       }
+      a{
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
     
-    
-    
+.card-group{
+  margin-bottom: 60px;
+}
+
+
+
+.pie{
+  width:80%;
+  height:200px;
+
+  
+  .contacto{
+  float:left;
+  color:black;
   }
-
-
-
-.oportunidades :hover{
-  cursor: pointer;
-    color: black;
-    background: blanchedalmond; 
 }
 .pie{
-  text-align: left;
-  color:black;
+  .redes{
+  float:right;
+  
+  }
 }
 .oportu{
   
@@ -283,29 +278,16 @@ cursor: pointer;
     font-style: italic;
     font-weight: bold;
     
+    
   }
 }
 .paginados{
-  background: rgb(34,193,195);
-background: -moz-radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(108,121,64,0.7931547619047619) 58%);
-background: -webkit-radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(108,121,64,0.7931547619047619) 58%);
-background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(108,121,64,0.7931547619047619) 58%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#6c7940",GradientType=1);
+  background-color: rgb(238, 214, 238);;
 }
 .paginatres{
-  background: rgb(34,193,195);
-background: -moz-radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(108,121,64,0.7931547619047619) 58%);
-background: -webkit-radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(108,121,64,0.7931547619047619) 58%);
-background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(108,121,64,0.7931547619047619) 58%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#6c7940",GradientType=1);
+  background-color: rgb(238, 214, 238);
 }
-.paginacuatro{
-  background: rgb(34,193,195);
-background: -moz-radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(108,121,64,0.7931547619047619) 58%);
-background: -webkit-radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(108,121,64,0.7931547619047619) 58%);
-background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(108,121,64,0.7931547619047619) 58%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#6c7940",GradientType=1);
-}
+
 .alquiler{
   h1{
     text-align: center;
@@ -335,10 +317,83 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endCo
   }
 }
 .registrate{
-  h2{
+  h1{
     text-align: center;
     font-style: italic;
     font-weight: bold;
   }
   }
-
+.container_xl{
+  width: 1000px;
+  height: 400px;
+  margin: auto;
+  .img{
+    img{
+    width: 300px;
+    height: 300px;
+    border-radius:100%;
+    float: left;
+      
+    }
+    }
+  }
+  .container_xl{
+    .parrafo{
+     font-size: 20px;
+      text-align: center;
+      font-family: italic;
+      
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .container_xl{
+      width: 100%;
+      height: 900px;
+      margin: auto;
+      .img{
+        img{
+          text-align: center;
+          width: 100%;
+          
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 768px){
+      .container_xl{
+        .parrafo{
+         
+          margin: auto;
+          
+          
+        }
+        }
+      }
+    @media screen and (max-width: 768px){
+      .carruceluno{
+        margin: auto;
+        width: 100%;
+      
+      }
+    }
+    
+    @media screen and (max-width: 768px){
+      .pie{
+        .contacto{
+          width: 100%;
+          float: left;
+          margin-bottom: 10px;
+          
+        }
+      }
+    }
+    @media screen and (max-width: 768px){
+      .pie{
+        .redes{
+          float: left;
+        }
+      }
+    }
+    .container-xl{
+      margin-bottom: 30px;
+    }

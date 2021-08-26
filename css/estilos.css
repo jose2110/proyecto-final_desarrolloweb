@@ -1,6 +1,8 @@
 .paginacuatro {
-  background-color: darkcyan;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  background-color: #eed6ee; }
+
+.paginauno {
+  background-color: #eed6ee; }
 
 /* header */
 .title h1 {
@@ -9,59 +11,17 @@
   text-transform: uppercase;
   -webkit-animation: rotate-scale-up 0.65s linear both;
   animation: rotate-scale-up 0.65s linear both;
-  height: 100%; }
+  height: 100%;
+  text-align: center; }
 
 .nombre h1 {
   text-align: center;
   font-size: 40px; }
 
-.conteiners {
-  background-color: antiquewhite;
-  width: 100%;
-  max-width: 1000px;
-  margin: 25px auto;
-  display: grid;
-  gap: 25px;
-  grid-template-columns: repeat(5, 1fr); }
-
-.conteiners > .nombre,
-.conteiners > .descripcion,
-.conteiners > .imagencasas,
-.conteiners > div {
-  background-color: antiquewhite;
-  padding: 20px;
-  border: 1px solid black; }
-
-.conteiners .nombre,
-.conteiners > .descripcion {
-  grid-column: span 3; }
-
-.conteiners > .imagencasas {
-  grid-column: span 2;
-  background: gray;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
-
-.descripcion > .articulo h1,
-.descripcion > .articulo p {
-  padding: 10px; }
-
-.conteiners .depto {
-  background: grey;
-  color: blanchedalmond; }
-
-.depto :hover {
-  cursor: pointer;
-  color: black;
-  background: blanchedalmond; }
-
-.imagencasas :hover {
-  cursor: pointer;
-  color: black;
-  background: blanchedalmond; }
+.carruceluno {
+  margin: auto;
+  width: 800px;
+  height: 500px auto; }
 
 @-webkit-keyframes rotate-scale-up {
   0% {
@@ -88,29 +48,33 @@
 .descripcion .articulo h2 {
   font-size: 40px; }
 
-.title .menu {
+.menu {
   background-color: dimgrey; }
-  .title .menu ul {
+  .menu ul {
     display: flex;
     list-style: none;
-    margin: 0;
     padding: 0;
     justify-content: center; }
-    .title .menu ul li {
+    .menu ul li {
       padding: 20px;
       font-size: 20px; }
+    .menu ul a {
+      font-weight: bold;
+      text-decoration: none; }
 
-.menu ul li:hover {
-  background-color: black;
-  color: blanchedalmond; }
+@media screen and (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    text-align: center; } }
 
 .ventas {
   height: 70px;
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  font-style: italic;
-  font-weight: bold; }
+  width: 100%; }
+  .ventas h1 {
+    text-align: center;
+    justify-content: center;
+    font-style: italic;
+    font-weight: bold; }
 
 .ventasuno {
   width: 100%;
@@ -132,11 +96,7 @@
   float: left; }
 
 .paginacinco {
-  background: #020024;
-  background: -moz-radial-gradient(circle, #020024 0%, rgba(58, 120, 124, 0.272146) 17%, #00ff3b 100%);
-  background: -webkit-radial-gradient(circle, #020024 0%, rgba(58, 120, 124, 0.272146) 17%, #00ff3b 100%);
-  background: radial-gradient(circle, #020024 0%, rgba(58, 120, 124, 0.272146) 17%, #00ff3b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00ff3b",GradientType=1); }
+  background-color: #eed6ee; }
 
 .registro {
   height: 650px;
@@ -146,8 +106,7 @@
 
 form {
   background: white;
-  padding: 40px 0;
-  border-radius: 10px; }
+  padding: 40px 0; }
   form .grupo {
     position: relative;
     margin: 45px; }
@@ -222,15 +181,22 @@ button {
   text-align: center; }
   .oportu h2 {
     text-align: center; }
+  .oportu a {
+    text-decoration: none;
+    font-weight: bold; }
 
-.oportunidades :hover {
-  cursor: pointer;
-  color: black;
-  background: blanchedalmond; }
+.card-group {
+  margin-bottom: 60px; }
 
 .pie {
-  text-align: left;
-  color: black; }
+  width: 80%;
+  height: 200px; }
+  .pie .contacto {
+    float: left;
+    color: black; }
+
+.pie .redes {
+  float: right; }
 
 .oportu {
   text-align: center; }
@@ -240,25 +206,10 @@ button {
     font-weight: bold; }
 
 .paginados {
-  background: #22c1c3;
-  background: -moz-radial-gradient(circle, #22c1c3 0%, rgba(108, 121, 64, 0.793155) 58%);
-  background: -webkit-radial-gradient(circle, #22c1c3 0%, rgba(108, 121, 64, 0.793155) 58%);
-  background: radial-gradient(circle, #22c1c3 0%, rgba(108, 121, 64, 0.793155) 58%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#6c7940",GradientType=1); }
+  background-color: #eed6ee; }
 
 .paginatres {
-  background: #22c1c3;
-  background: -moz-radial-gradient(circle, #22c1c3 0%, rgba(108, 121, 64, 0.793155) 58%);
-  background: -webkit-radial-gradient(circle, #22c1c3 0%, rgba(108, 121, 64, 0.793155) 58%);
-  background: radial-gradient(circle, #22c1c3 0%, rgba(108, 121, 64, 0.793155) 58%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#6c7940",GradientType=1); }
-
-.paginacuatro {
-  background: #22c1c3;
-  background: -moz-radial-gradient(circle, #22c1c3 0%, rgba(108, 121, 64, 0.793155) 58%);
-  background: -webkit-radial-gradient(circle, #22c1c3 0%, rgba(108, 121, 64, 0.793155) 58%);
-  background: radial-gradient(circle, #22c1c3 0%, rgba(108, 121, 64, 0.793155) 58%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#6c7940",GradientType=1); }
+  background-color: #eed6ee; }
 
 .alquiler h1 {
   text-align: center;
@@ -280,7 +231,53 @@ button {
   font-style: italic;
   font-weight: bold; }
 
-.registrate h2 {
+.registrate h1 {
   text-align: center;
   font-style: italic;
   font-weight: bold; }
+
+.container_xl {
+  width: 1000px;
+  height: 400px;
+  margin: auto; }
+  .container_xl .img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    float: left; }
+
+.container_xl .parrafo {
+  font-size: 20px;
+  text-align: center;
+  font-family: italic; }
+
+@media screen and (max-width: 768px) {
+  .container_xl {
+    width: 100%;
+    height: 900px;
+    margin: auto; }
+    .container_xl .img img {
+      text-align: center;
+      width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .container_xl .parrafo {
+    margin: auto; } }
+
+@media screen and (max-width: 768px) {
+  .carruceluno {
+    margin: auto;
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .pie .contacto {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 768px) {
+  .pie .redes {
+    float: left; } }
+
+.container-xl {
+  margin-bottom: 30px; }
